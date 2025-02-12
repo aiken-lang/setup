@@ -28,7 +28,7 @@ async function main() {
   core.info(`Assuming arch: ${arch}`);
 
   const platform = useCargoDist
-    ? { "linux": "unknown-linux-gnu"
+    ? { "linux": "unknown-linux-musl"
       , "darwin": "apple-darwin"
       , "windows": "pc-windows-msvc"
       }[process.platform]
